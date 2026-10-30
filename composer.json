@@ -1,0 +1,24 @@
+{
+  "name": "kargo/laravel8-sdk",
+  "description": "KarGo OpenAPI integration for Laravel 8",
+  "type": "library",
+  "license": "proprietary",
+  "require": {
+    "php": ">=7.4",
+    "guzzlehttp/guzzle": "^7.0",
+    "illuminate/support": "^8.0",
+    "illuminate/http": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "KarGo\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "KarGo\\KarGoServiceProvider"
+      ]
+    }
+  }
+}

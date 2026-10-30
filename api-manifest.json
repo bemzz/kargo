@@ -1,0 +1,282 @@
+[
+  {
+    "tag": "文件上传下载",
+    "service": "FileService",
+    "method": "upload",
+    "http_method": "POST",
+    "path": "/openapi/file/upload",
+    "summary": "上传文件"
+  },
+  {
+    "tag": "文件上传下载",
+    "service": "FileService",
+    "method": "download",
+    "http_method": "GET",
+    "path": "/openapi/file/download",
+    "summary": "下载文件"
+  },
+  {
+    "tag": "产品管理",
+    "service": "ProductService",
+    "method": "page",
+    "http_method": "POST",
+    "path": "/openapi/product/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "仓库管理",
+    "service": "WarehouseService",
+    "method": "page",
+    "http_method": "POST",
+    "path": "/openapi/warehouse/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "云仓库存",
+    "service": "CloudInventoryService",
+    "method": "inventoryPage",
+    "http_method": "POST",
+    "path": "/openapi/warehouse/inventory/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "DF库存",
+    "service": "DfStockService",
+    "method": "stockPage",
+    "http_method": "POST",
+    "path": "/openapi/df/stock/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "DF库存",
+    "service": "DfStockService",
+    "method": "stockAvailable",
+    "http_method": "PUT",
+    "path": "/openapi/df/stock/available",
+    "summary": "修改可用库存"
+  },
+  {
+    "tag": "PO订单",
+    "service": "PoOrderService",
+    "method": "poOrderPage",
+    "http_method": "POST",
+    "path": "/openapi/order/po-order/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "PO订单",
+    "service": "PoOrderService",
+    "method": "poOrderItemDeliveryWarehouse",
+    "http_method": "POST",
+    "path": "/openapi/order/po-order/po-order-item-delivery-warehouse",
+    "summary": "获取可发货仓库"
+  },
+  {
+    "tag": "PO订单",
+    "service": "PoOrderService",
+    "method": "poOrderConfirm",
+    "http_method": "POST",
+    "path": "/openapi/order/po-order/confirm",
+    "summary": "确认接单"
+  },
+  {
+    "tag": "DF订单",
+    "service": "DfOrderService",
+    "method": "dfOrderPage",
+    "http_method": "POST",
+    "path": "/openapi/order/df-order/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "DF订单",
+    "service": "DfOrderService",
+    "method": "dfOrderLabelCreate",
+    "http_method": "POST",
+    "path": "/openapi/order/df-order/label/create",
+    "summary": "创建标签"
+  },
+  {
+    "tag": "发货单",
+    "service": "ShippingOrderService",
+    "method": "shippingOrderPage",
+    "http_method": "POST",
+    "path": "/openapi/warehouse/shipping-order/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "发货单",
+    "service": "ShippingOrderService",
+    "method": "shippingOrderDetail",
+    "http_method": "GET",
+    "path": "/openapi/warehouse/shipping-order/detail",
+    "summary": "详情查询"
+  },
+  {
+    "tag": "发货单",
+    "service": "ShippingOrderService",
+    "method": "shippingOrderPoOrderPage",
+    "http_method": "POST",
+    "path": "/openapi/warehouse/shipping-order/po-order/page",
+    "summary": "可创建发货单的PO订单分页查询"
+  },
+  {
+    "tag": "发货单",
+    "service": "ShippingOrderService",
+    "method": "shippingOrderCreate",
+    "http_method": "POST",
+    "path": "/openapi/warehouse/shipping-order/create",
+    "summary": "创建发货单"
+  },
+  {
+    "tag": "发货单",
+    "service": "ShippingOrderService",
+    "method": "shippingOrderShipConfirm",
+    "http_method": "POST",
+    "path": "/openapi/warehouse/shipping-order/ship/confirm",
+    "summary": "发货确认"
+  },
+  {
+    "tag": "发货单",
+    "service": "ShippingOrderService",
+    "method": "shippingOrderCancel",
+    "http_method": "POST",
+    "path": "/openapi/warehouse/shipping-order/cancel",
+    "summary": "取消发货单"
+  },
+  {
+    "tag": "云仓出库单",
+    "service": "CloudOutboundService",
+    "method": "cloudOutboundOrderPage",
+    "http_method": "POST",
+    "path": "/openapi/warehouse/cloud-outbound-order/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "广告发票",
+    "service": "AdInvoiceService",
+    "method": "invoicePage",
+    "http_method": "POST",
+    "path": "/openapi/ad/invoice/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "广告发票",
+    "service": "AdInvoiceService",
+    "method": "invoiceDetail",
+    "http_method": "GET",
+    "path": "/openapi/ad/invoice/detail",
+    "summary": "详情"
+  },
+  {
+    "tag": "Coop 发票",
+    "service": "CoopInvoiceService",
+    "method": "coopPage",
+    "http_method": "POST",
+    "path": "/openapi/invoice/coop/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "Coop 发票",
+    "service": "CoopInvoiceService",
+    "method": "coopDetails",
+    "http_method": "GET",
+    "path": "/openapi/invoice/coop/details",
+    "summary": "详情"
+  },
+  {
+    "tag": "Coop 发票",
+    "service": "CoopInvoiceService",
+    "method": "coopSummaryPage",
+    "http_method": "POST",
+    "path": "/openapi/invoice/coop/summary/page",
+    "summary": "Summary 分页查询"
+  },
+  {
+    "tag": "Coop 发票",
+    "service": "CoopInvoiceService",
+    "method": "coopAccrualForVendorPage",
+    "http_method": "POST",
+    "path": "/openapi/invoice/coop/accrual-for-vendor/page",
+    "summary": "Accrual For Current Period 分页查询"
+  },
+  {
+    "tag": "罚款管理",
+    "service": "ChargebackService",
+    "method": "page",
+    "http_method": "POST",
+    "path": "/openapi/chargeback/page",
+    "summary": "分页查询"
+  },
+  {
+    "tag": "罚款管理",
+    "service": "ChargebackService",
+    "method": "shipInOwnContainerDetails",
+    "http_method": "POST",
+    "path": "/openapi/chargeback/ship-in-own-container/details",
+    "summary": "Ship in Own Container 详情"
+  },
+  {
+    "tag": "罚款管理",
+    "service": "ChargebackService",
+    "method": "noCartonDetails",
+    "http_method": "POST",
+    "path": "/openapi/chargeback/no-carton/details",
+    "summary": "No carton/package content label 详情"
+  },
+  {
+    "tag": "罚款管理",
+    "service": "ChargebackService",
+    "method": "asnAccuracyDetails",
+    "http_method": "POST",
+    "path": "/openapi/chargeback/asn-accuracy/details",
+    "summary": "ASN accuracy 详情"
+  },
+  {
+    "tag": "罚款管理",
+    "service": "ChargebackService",
+    "method": "pickupAccuracyDetails",
+    "http_method": "POST",
+    "path": "/openapi/chargeback/pickup-accuracy/details",
+    "summary": "Pickup accuracy 详情"
+  },
+  {
+    "tag": "罚款管理",
+    "service": "ChargebackService",
+    "method": "prepExternalBubbleWrappingDetails",
+    "http_method": "POST",
+    "path": "/openapi/chargeback/prep-external-bubble-wrapping/details",
+    "summary": "Prep - External bubble wrapping 详情"
+  },
+  {
+    "tag": "罚款管理",
+    "service": "ChargebackService",
+    "method": "poOnTimeAccuracyDetails",
+    "http_method": "POST",
+    "path": "/openapi/chargeback/po-on-time-accuracy/details",
+    "summary": "PO on-time accuracy 详情"
+  },
+  {
+    "tag": "罚款管理",
+    "service": "ChargebackService",
+    "method": "inFullDeliveryDetails",
+    "http_method": "POST",
+    "path": "/openapi/chargeback/in-full-delivery/details",
+    "summary": "In full delivery 详情"
+  },
+  {
+    "tag": "罚款管理",
+    "service": "ChargebackService",
+    "method": "onTimeShipmentDetails",
+    "http_method": "POST",
+    "path": "/openapi/chargeback/on-time-shipment/details",
+    "summary": "On time shipment 详情"
+  },
+  {
+    "tag": "罚款管理",
+    "service": "ChargebackService",
+    "method": "receivingAccuracyDetails",
+    "http_method": "POST",
+    "path": "/openapi/chargeback/receiving-accuracy/details",
+    "summary": "Receiving Accuracy 详情"
+  }
+]
